@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cl="http://schemas.android.com/apk/lib/com.example.androidapp.widgets"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+	android:background="#ffffff"
+    android:id="@+id/layout" >
+	<ScrollView
+		android:id="@+id/scrollable_places"
+    	android:fillViewport="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        
+		   <gesturelogger.view.FontCreatorView
+		    android:id="@+id/canvas"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent" />
+    
+	</ScrollView>
+</RelativeLayout>

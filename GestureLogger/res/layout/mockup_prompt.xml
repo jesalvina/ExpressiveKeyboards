@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/fontInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Font ID"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/font"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fontInstruction"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/typeInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/font"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:text="What do you want to do?"
+        android:textSize="20sp" />
+    
+    <RadioGroup
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/typeInstruction"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp" >
+
+        <RadioButton
+            android:id="@+id/define"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Define a font" />
+        <RadioButton
+            android:id="@+id/mockup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Try typing with Expressive Keyboard" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/type"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Start" />
+    
+
+</RelativeLayout>

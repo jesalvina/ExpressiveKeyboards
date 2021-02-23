@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="LintError" severity="ignore" />
+    <issue id="NewApi" severity="ignore">
+        <ignore path="src/gesturelogger/view/DrawingView.java" />
+        <ignore path="src/gesturelogger/view/ExperimentView.java" />
+        <ignore path="src/gesturelogger/view/PracticeView.java" />
+    </issue>
+    <issue id="SimpleDateFormat" severity="ignore" />
+</lint>

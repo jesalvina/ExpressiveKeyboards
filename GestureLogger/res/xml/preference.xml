@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+  <PreferenceCategory android:title="Choose Output Type">
+	  <CheckBoxPreference android:title="Apply to all"
+	                      android:defaultValue="false"
+	                      android:summary="This option if selected will apply the settings to all text."
+	                      android:key="all" />
+	  <CheckBoxPreference android:title="Colored output"
+	                      android:defaultValue="false"
+	                      android:summary="This option if selected will change the text color based on drawn gestures."
+	                      android:key="color" />
+	  <CheckBoxPreference android:title="Use dynamic font"
+	      				  android:dependency="color"
+	                      android:defaultValue="false"
+	                      android:summary="This option if selected will use a dynamic font instead of the default font."
+	                      android:key="font" />
+  </PreferenceCategory>
+  
+  <PreferenceCategory android:title="Customize Output Mapping">
+      <gesturelogger.model.SeekBarPreference android:dependency="color"
+          				 android:key="red"
+                		 android:defaultValue="255"
+                		 android:title="Red value" />  
+      <gesturelogger.model.SeekBarPreference android:dependency="color"
+          				 android:key="green"
+                		 android:defaultValue="255"
+                		 android:title="Green value" /> 
+      <gesturelogger.model.SeekBarPreference android:dependency="color"
+          				 android:key="blue"
+                		 android:defaultValue="255"
+                		 android:title="Blue value" /> 
+  </PreferenceCategory>
+  
+  
+
+</PreferenceScreen>
